@@ -1,0 +1,48 @@
+body {
+    background-color: lightgray;
+}
+
+#title {
+    text-align: center;
+    font-size: 26px;
+}
+
+#subheading {
+    text-align: center;
+}
+
+#image {
+    display: block;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+#img-div {
+    background-color: whitesmoke;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+
+#img-caption {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#tribute-info {
+    margin: 10px 150px 10px 150px;
+    padding: 10px 0px 10px 0px;
+}
+
+#timeline ul {
+    padding: 10px 15px 10px 15px;
+    margin-left: 400px;
+}
+
+#timeline h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
