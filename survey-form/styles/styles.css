@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: gray;
+}
+
+body {
+    background-color: purple;
+}
+
+h2, label, h1, p {
+    color: whitesmoke;
+}
+
+header {
+    text-align: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 13px;
+    margin: 15px;
+}
