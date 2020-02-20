@@ -5,28 +5,29 @@
         <title>Survey Form</title>
         <meta charset="UTF-8">
         <link href="styles/styles.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Segoi+UI&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <h1 id="title">Andrew's Survey</h1>
+            <h1 id="title">Andrew's Survey Form</h1>
             <p id="description">Thank you for taking the time to complete this form.</p>
         </header>
     
         <main>
             <form id="survey-form">
                 <h2>Some general personal information</h2>
-                <label for="name" id="name-label">Full Name
+                <div id="personal">
+                    <label for="name" id="name-label">Full Name</label>
                     <input id="name" type=text placeholder="Enter your name here">
-                </label>
-                <!--Need logic to check that email is the correct format-->
-                <label for="email" id="email-label">Email
-                    <input id="email" type=text placeholder="Entere your email here">
-                </label>
-                <!--Need logic to check that only numbers are entered-->
-                <label for="number" id="number-label">Age
-                    <input id="number" type=number min=0 max=100 placeholder="Enter your age here">
-                </label>
+                    <!--Need logic to check that email is the correct format-->
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type=text placeholder="Enter your email here">
+                    <!--Need logic to check that only numbers are entered-->
+                    <label for="number" id="number-label">Age</label>
+                    <input id="number" type=number min=0 max=100 placeholder="Enter your age here">  
+                </div>
 
                 <h2>What are you most proficient in?</h2>
                 <select id="dropdown">
@@ -39,7 +40,7 @@
                     <option value="SQL">SQL</option>
                 </select>
 
-                <h2>Tick the most relevent options</h2>
+                <h2>Tick the most relevant options</h2>
                 <label for="a" id="a-label">a 
                     </a><input id="a" type=checkbox name="a" value="a">
                 </label>
