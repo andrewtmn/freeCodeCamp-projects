@@ -20,14 +20,28 @@
                 <h2>Some general personal information</h2>
                 <div id="personal">
                     <label for="name" id="name-label">Full Name</label>
-                    <input id="name" type=text placeholder="Enter your name here">
+                    <input id="name" type=text placeholder="Enter your name here" required>
                     <!--Need logic to check that email is the correct format-->
                     <label for="email" id="email-label">Email</label>
-                    <input id="email" type=email placeholder="Enter your email here">
+                    <input id="email" type=email placeholder="Enter your email here" required>
                     <!--Need logic to check that only numbers are entered-->
                     <label for="number" id="number-label">Age</label>
-                    <input id="number" type=number min=0 max=100 placeholder="Enter your age here">  
+                    <input id="number" type=number min=0 max=100 placeholder="Enter your age here" required>  
                 </div>
+
+                <h2>How likely would you be to recommend freeCodeCamp?</h2>
+                <label for="highly-likely">
+                    <input id="highly-likely" name="recommend" type="radio">  Highly Likely
+                </label>
+                <label for="likely">
+                    <input id="likely" name="recommend" type="radio">  Likely
+                </label>
+                <label for="unlikely">
+                    <input id="unlikely" name="recommend" type="radio">  Unlikely
+                </label>
+                <label for="highly-unlikely">
+                    <input id="highly-unlikely" name="recommend" type="radio">  Highly Unlikely
+                </label>
 
                 <h2>What are you most proficient in?</h2>
                 <select id="dropdown">
@@ -69,7 +83,7 @@
                     <input id="e" type=checkbox name="e" value="e">
                 </label>
                 <h2>Any comments or suggestions?</h2>
-                <input id="comments" type="textarea">
+                <textarea id="comments" placeholder="Enter your comments and/or suggestions here"></textarea>
                 <input id="submit" type=submit>
             </form>
         </main>
