@@ -6,6 +6,7 @@ main {
 
 body {
     background:linear-gradient(rgba(136, 166, 230, 0.6), rgba(121, 156, 221, 0.6)), url("../images/conference.jpg");
+    background-attachment: fixed;
     background-color: rgba(10, 20, 109, 0.658);
     font-family: "Poppins", 'Segoi UI', sans-serif;
 }
@@ -23,8 +24,9 @@ header {
     flex-direction: column;
     background: rgba(32, 49, 201, 0.75);
     border-radius: 10px;
-    padding: 13px;
+    padding: 30px;
     margin: 15px;
+    width: 50%;
 }
 
 #personal {
@@ -33,6 +35,12 @@ header {
 }
 
 input {
-    padding: 5px 0px;
+    padding: 5px 5px;
     margin: 10px 0px;
+    font-size: 14px;
+}
+
+#submit {
+    width: 100px;
+    margin: 20px 0px;
 }
