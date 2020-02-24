@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+
+#header-img {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    margin: 3px;
+}
+
+#nav-bar {
+    background-color: beige;
+    overflow: hidden;
+}
+
+#nav-bar .nav-link {
+    float: right;
+    list-style: none;
+    padding: 5px;
+}
+
+#nav-bar .nav-link:hover {
+    font-weight: bold;
+}
+
+#nav-bar .nav-link a {
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+li:hover {
+    color: blue;
+}
+
+#video-section {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    margin: 20px;
+    padding: 15px;
+    background-color: red;
+    position: relative;
+    margin-top: 180px;
+    border-radius: 3px;
+}
+
+#about-us {
+    background-color: yellowgreen;
+}
+
+#form {
+    background-color: burlywood;
+}

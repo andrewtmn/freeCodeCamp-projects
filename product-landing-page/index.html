@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Product Landing Page</title>
+        <meta charset="UTF-8">
+        <link href="styles/styles.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="header">
+            <img id="header-img" src="images/camera.jpg" alt="header-image">
+            <!--Nav bar should always be at top of the viewport-->
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-link"><a href="#video-section">Product Video</a></li>
+                    <li class="nav-link"><a href="">Contact Us</a></li>
+                    <li class="nav-link"><a href="#form">Email Subscription</a></li>
+                    <li class="nav-link"><a href="">Photos</a></li>
+                    <li class="nav-link"><a href="">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="video-section">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hQRfUE723go" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+        </div>
+
+        <video id="video" width="0" height="0" controls></video>
+        <div id="about-us">
+            <h2>About Us</h2>
+            <p> We're an independent small business priding ourselves on our wide range of film cameras, accesories,
+                film and film processing. We offer all kinds of film cameras, from 35mm to medium format to even 
+                larger format. Our catalogue of film is the most versatile in the country and we have a large 
+                demographic of film enthusiasists and profressional phtoographers that shop at our store.
+            </p>
+        </div>
+
+        <div id="product-images">
+
+        </div>
+        
+        <form id="form">
+            <h2>Get updated on special deals and discounts</h2>
+            <input id="email" type=email placeholder="Enter your email here" required>
+            <!--Need to do submit logic here - submit it to the mock website by freeCodeCamp-->
+            <input id="submit" type=submit>
+        </form>
+
+        <!--need at least one media query-->
+        <!--need to utilise flexbox at least once-->
+
+
+    </body>
+</html>
