@@ -1,5 +1,7 @@
 body {
     background-color: lightblue;
+    background: linear-gradient(rgba(136, 166, 230, 0.6), rgba(121, 156, 221, 0.6)), 
+        url("../images/background.jpg");
 }
 
 header {
@@ -7,6 +9,9 @@ header {
     flex-direction: row;
     background-color: white;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
 }
 
@@ -50,9 +55,27 @@ iframe {
     margin: 20px;
     padding: 15px;
     background-color: red;
-    position: relative;
     margin-top: 180px;
     border-radius: 3px;
+}
+
+#sample-photos-heading {
+    text-align: center;
+}
+
+#product-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 50px 10px;
+    justify-content: center;
+}
+
+.samples {
+    height: 250px;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
 }
 
 #about-us {
