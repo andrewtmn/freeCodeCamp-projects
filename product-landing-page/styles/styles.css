@@ -31,19 +31,19 @@ header {
     margin-left: -30px;
 }
 
-#nav-bar .nav-link {
+#nav-bar li {
     float: right;
     list-style: none;
     padding: 0px 10px 7px 5px;
     margin: 0px 10px 7px 5px;
 }
 
-a, a:active, a:visited {
+.nav-link, .nav-link:active, .nav-link:visited {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+.nav-link:hover {
     color: rgb(116, 104, 104);
 }
 
@@ -141,4 +141,24 @@ iframe {
     padding: 25px 20px 10px 20px;
     justify-content: center;
     min-width: 250px;
+}
+
+@media only screen and (min-width: 1800px) {
+    #about-us {
+        min-width: 40%;
+    }
+
+    #contact-us {
+        min-width: 20%;
+    }
+
+    #form {
+        min-width: 15%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    body {
+        font-size: 12pt;
+    }
 }

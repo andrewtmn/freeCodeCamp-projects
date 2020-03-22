@@ -14,11 +14,12 @@
             <!--Nav bar should always be at top of the viewport-->
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a href="#video-section">PRODUCT VIDEO</a></li>
-                    <li class="nav-link"><a href="#contact-us">CONTACT US</a></li>
-                    <li class="nav-link"><a href="#form">SUBSCRIPTION</a></li>
-                    <li class="nav-link"><a href="#product-images">PHOTOS</a></li>
-                    <li class="nav-link"><a href="#about-us">ABOUT US</a></li>
+                    <li><a class="nav-link" href="#video-section">PRODUCT VIDEO</a></li>
+                    <li><a class="nav-link" href="#contact-us">CONTACT US</a></li>
+                    <li><a class="nav-link" href="#form">SUBSCRIPTION</a></li>
+                    <li><a class="nav-link" href="#product-images">PHOTOS</a></li>
+                    <li><a class="nav-link" href="#about-us">ABOUT US</a></li>
+                    <li><img src="images/camera.jpq" alt="camera logo"></li>
                 </ul>
             </nav>
         </header>
@@ -45,7 +46,7 @@
                 <h2>NEWSLETTER AND DEALS</h2>
                 <input id="email" type=email placeholder="Enter your email here" required>
                 <!--Need to do submit logic here - submit it to the mock website by freeCodeCamp-->
-                <input id="submit" type=submit>
+                <input id="submit" type=submit value="email" formaction="https://www.freecodecamp.com/email-submit">
             </form>
 
             <div id="about-us">
@@ -65,7 +66,7 @@
             </div>
         </div>
 
-        <!--need at least one media query-->
+        <video id="video"></video>
 
 
     </body>
