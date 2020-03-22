@@ -5,19 +5,20 @@
         <title>Product Landing Page</title>
         <meta charset="UTF-8">
         <link href="styles/styles.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Work+Sans&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header id="header">
-            <img id="header-img" src="images/camera.jpg" alt="header-image">
+            <!-- <img id="header-img" src="images/camera.jpg" alt="header-image"> -->
             <!--Nav bar should always be at top of the viewport-->
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a href="#video-section">Product Video</a></li>
-                    <li class="nav-link"><a href="">Contact Us</a></li>
-                    <li class="nav-link"><a href="#form">Email Subscription</a></li>
-                    <li class="nav-link"><a href="">Photos</a></li>
-                    <li class="nav-link"><a href="">About Us</a></li>
+                    <li class="nav-link"><a href="#video-section">PRODUCT VIDEO</a></li>
+                    <li class="nav-link"><a href="#contact-us">CONTACT US</a></li>
+                    <li class="nav-link"><a href="#form">SUBSCRIPTION</a></li>
+                    <li class="nav-link"><a href="#product-images">PHOTOS</a></li>
+                    <li class="nav-link"><a href="#about-us">ABOUT US</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,31 +31,39 @@
 
         <video id="video" width="0" height="0" controls></video>
 
-        <h2 id="sample-photos-heading">Sample images on the Nikon FE</h2>
+        <!-- <h2 id="sample-photos-heading">Sample images on the Nikon FE</h2> -->
         <div id="product-images">
             <img class="samples" src="images/sample-1.jpg">
             <img class="samples" src="images/sample-2.png">
             <img class="samples" src="images/sample-3.jpg">
-            <img class="samples" src="images/sample-4.jpg">
             <img class="samples" src="images/sample-5.jpg">
             <img class="samples" src="images/sample-6.jpg">
         </div>
 
-        <div id="about-us">
-            <h2>About Us</h2>
-            <p> We're an independent small business priding ourselves on our wide range of film cameras, accesories,
-                film and film processing. We offer all kinds of film cameras, from 35mm to medium format to even 
-                larger format. Our catalogue of film is the most versatile in the country and we have a large 
-                demographic of film enthusiasists and profressional phtoographers that shop at our store.
-            </p>
-        </div>
+        <div id="contact-section">
+            <form id="form">
+                <h2>NEWSLETTER AND DEALS</h2>
+                <input id="email" type=email placeholder="Enter your email here" required>
+                <!--Need to do submit logic here - submit it to the mock website by freeCodeCamp-->
+                <input id="submit" type=submit>
+            </form>
 
-        <form id="form">
-            <h2>Get updated on special deals and discounts</h2>
-            <input id="email" type=email placeholder="Enter your email here" required>
-            <!--Need to do submit logic here - submit it to the mock website by freeCodeCamp-->
-            <input id="submit" type=submit>
-        </form>
+            <div id="about-us">
+                <h2>ABOUT US</h2>
+                <p> We're an independent small business priding ourselves on our wide range of film cameras, accesories,
+                    film and film processing. We offer all kinds of film cameras, from 35mm to medium format to even 
+                    larger format. Our catalogue of film is the most versatile in the country and we have a large 
+                    demographic of film enthusiasists and profressional phtoographers that shop at our store.
+                </p>
+            </div>
+
+            <div id="contact-us">
+                <h2>CONTACT US</h2>
+                <p>0404040404</p>
+                <p>email@gmail.com</p>
+                <p>111 Film Street, DARRA, QLD 4000</p>
+            </div>
+        </div>
 
         <!--need at least one media query-->
 
