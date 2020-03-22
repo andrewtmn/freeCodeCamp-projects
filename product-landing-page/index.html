@@ -19,7 +19,7 @@
                     <li><a class="nav-link" href="#form">SUBSCRIPTION</a></li>
                     <li><a class="nav-link" href="#product-images">PHOTOS</a></li>
                     <li><a class="nav-link" href="#about-us">ABOUT US</a></li>
-                    <li><img src="images/camera.jpq" alt="camera logo"></li>
+                    <li><img id="header-img" src="images/camera.jpq" alt="camera logo"></li>
                 </ul>
             </nav>
         </header>
@@ -30,7 +30,7 @@
                 allowfullscreen></iframe>
         </div>
 
-        <video id="video" width="0" height="0" controls></video>
+        <video id="video" width="0" height="0" src="" controls></video>
 
         <!-- <h2 id="sample-photos-heading">Sample images on the Nikon FE</h2> -->
         <div id="product-images">
@@ -42,11 +42,11 @@
         </div>
 
         <div id="contact-section">
-            <form id="form">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <h2>NEWSLETTER AND DEALS</h2>
-                <input id="email" type=email placeholder="Enter your email here" required>
+                <input id="email" name="email" type=email placeholder="Enter your email here" required>
                 <!--Need to do submit logic here - submit it to the mock website by freeCodeCamp-->
-                <input id="submit" type=submit value="email" formaction="https://www.freecodecamp.com/email-submit">
+                <input id="submit" type=submit value="email">
             </form>
 
             <div id="about-us">
@@ -65,9 +65,5 @@
                 <p>111 Film Street, DARRA, QLD 4000</p>
             </div>
         </div>
-
-        <video id="video"></video>
-
-
     </body>
 </html>
