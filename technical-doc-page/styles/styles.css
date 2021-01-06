@@ -4,35 +4,33 @@
 
 body {
     background-color: white;
-    display: grid;
-    grid-template-columns: 15fr 85fr;
+    /*display: grid;
+    grid-template-columns: 15fr 85fr;*/
     margin: 0;
     font-family: "Roboto Mono";
     font-size: 13px;
 }
 
 #navbar {
-    background-color: rgb(113, 113, 119);
     padding: 20px 0px 20px 10px;
     margin: 0;
-    border-style: solid;
-    border-width: 0px 2px 0px 0px;
-    display: grid;
-    grid-template-rows: auto auto;
+    position: fixed;
+    left: 0px;
 }
 
 #navbar header {
     font-size: 24px;
-    width: 150px;
     position: fixed;
+    width: 150px;
 }
 
 #nav-bar-list {
     list-style-type: none;
     margin: 20px 0px 10px 0px; 
     padding: 0;
-    width: 150px;
     position: fixed;
+    top: 75px;
+    width: 150px;
 }
 
 #nav-bar-list li {
@@ -60,6 +58,9 @@ body {
 #main-doc {
     background-color: whitesmoke;
     padding: 10px 5px 20px 5px;
+    position: relative;
+    right: 0px;
+    left: 200px;
 }
 
 .main-section {
@@ -74,5 +75,11 @@ body {
 header {
     color:black;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 13px;
+    }
 }
 
