@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Basics of Light Exposure in Photography</title>
+        <title>Programming Basics</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
 
     <body>
-        <nav id="nav-bar">
-            <header>Basics of Programming</header>
-            <a href="#Programming_Environment" class="nav-link">Programming Environment</a>
-            <a href="#Data_Types" class="nav-link">Data Types</a>
-            <a href="#Variables" class="nav-link">Variables</a>
-            <a href="#Keywords" class="nav-link">Keywords</a>
-            <a href="#Logical_and_Arithmetical_Operators" class="nav-link">Logical and Arithmetical Operators</a>
-            <a href="#If-Else_Conditions" class="nav-link">If-Else Conditions</a>
-            <a href="#Loops" class="nav-link">Loops</a>
-            <a href="#Numbers,_Characters_and_Arrays" class="nav-link">Numbers, Characters and Arrays</a>
-            <a href="#Functions" class="nav-link">Functions</a>
-            <a href="Input_and_Output_Operations" class="nav-link">Input and Output Operations</a>
+        <nav id="navbar">
+            <header>
+                Programming Basics
+            </header>
+            <ul id="nav-bar-list">
+                <li><a class="nav-link" href="#Overview">Overview</a></li>
+                <li><a class="nav-link" href="#Programming_Environment">Programming Environment</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Keywords">Keywords</a></li>
+                <li><a class="nav-link" href="#Logical_and_Arithmetical_Operators">Logical and Arithmetical Operators</a></li>
+                <li><a class="nav-link" href="#If-Else_Conditions">If-Else Conditions</a></li>
+                <li><a class="nav-link" href="#Loops">Loops</a></li>
+                <li><a class="nav-link" href="#Numbers,_Characters_and_Arrays">Numbers, Characters and Arrays</a></li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Input_and_Output_Operations">Input and Output Operations</a></li>
+            </ul>
         </nav>
 
         <main id="main-doc">
@@ -45,42 +50,99 @@
 
             <section class="main-section" id="Programming_Environment">
                 <header>Programming Environment</header>
+                <p>Setting up a programming environment is neccessary before even starting on writing your own
+                    program. Doing so will allow you to effectively write, test and run your code. 
+                </p>
             </section>
 
             <section class="main-section" id="Data_Types">
                 <header>Data Types</header>
+                <p>By definition, a data type is an attribute of data which tells the compiler/interpreter how
+                    your program intends to use the data. For example, if we use the integer data type, our 
+                    program knows that we are dealing with whole numbers, and that we can perform certain
+                    operations on this type such as basic arithmetic operations.
+                </p>
             </section>
 
             <section class="main-section" id="Variables">
                 <header>Variables</header>
+                <p>Variables in programming are names used to hold one or more values.
+                </p>
             </section>
 
             <section class="main-section"id="Keywords">
                 <header>Keywords</header>
+                <p>Keywords are predefined, reserved words used in programming that have special meaning
+                    to the compiler. For example, in the Java programming language, using the keyword <code>void</code>
+                    in a function declaration means that the function returns nothing.
+                </p>
             </section>
 
             <section class="main-section" id="Logical_and_Arithmetical_Operators">
                 <header>Logical and Arithmetical Operators</header>
+                <p>Logical operators deal with truth, or boolean, values. For example, the three main logical operators
+                    you will encounter in programming is AND, OR and NOT. The symbol used to represent each of these
+                    operators will depend on the programming language, but its purpose remains the same. 
+                </p>
             </section>
 
             <section class="main-section" id="If-Else_Conditions">
                 <header>If-Else Conditions</header>
+                <p>Programs may need to execute different code depending on certain conditions. For example, a 
+                    calculator program would need to perform addition if a user enters the addition symbol, and 
+                    subtraction if the user enters the subtraction symbol. This is often handled using If-Else conditions.
+                </p>
+
+                <code>If condition 1 occurs {
+                            do these things
+                } else {
+                    do these other things
+                }
+                </code>
             </section>
 
             <section class="main-section" id="Loops">
                 <header>Loops</header>
+                <p>Sometimes your program might need to repeat a certain action indefinitely or until a 
+                    certain condition is met. For example, consider a simple counting program: you prompt 
+                    the user to enter a number to add to the current count, and the program ends once the 
+                    count reaches, or is above 100.
+                </p>
+
+                <p>We could write code that prompts the user for a number, add the number to the count, 
+                    and then write more code to prompt the user for another number and so on. However, how 
+                    many times do we need to do this? We can see here that there would be a lot of duplicated 
+                    code. 
+                </p>
+                <code>Prompt user for number, add number to count, check count</code>
+                <code>Prompt user for number, add number to count, check count</code>
+                <code>repeat... (how many times?)</code>
+
+                <p>We can use a loop instead so that our code doesn't repeat itself. In Java, this would look
+                    something like this:
+                    <code>while (count <= 100) {
+                        prompt user for number, add number to count, check count
+                    }
+                    </code>
+                </p>
+                <p>The program will simply repeat the count increment until the count does not meet the condition
+                    of the loop (count is less than or equal to 100).
+                </p>
             </section>
 
             <section class="main-section" id="Numbers,_Characters_and_Arrays">
                 <header>Numbers, Characters and Arrays</header>
+                <p>blah blah blah</p>
             </section>
             
             <section class="main-section" id="Functions">
                 <header>Functions</header>
+                <p>blah blah blah</p>
             </section>
 
             <section class="main-section" id="Input_and_Output_Operations">
                 <header>Input and Output Operations</header>
+                <p>blah blah blah</p>
             </section>
         </main>
     </body>
