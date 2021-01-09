@@ -1,0 +1,109 @@
+:root {
+    --main-bg: rgb(51, 50, 56);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--main-bg, black);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Fixed navbar to the top of the web page */
+#navbar {
+    background-color: var(--main-bg, black);
+    margin: 0px;
+    padding: 0px 10px 10px 10px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+}   
+
+#navbar ul {
+    list-style: none;
+    padding: 0px 5px 0px 5px;
+}
+
+#navbar a {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#navbar a:after {
+    text-decoration: none;
+    color: white;
+}
+
+#welcome-section {
+    background-color: var(--main-bg, black);
+    margin: 100px 0px 0px 0px;
+    padding: 10px;
+    height: 100vh;
+    text-align: center;
+}
+
+#welcome-section h1,p {
+    color: white;
+    position: relative;
+    top: 75px;
+}
+
+/* Use CSS Grid to layout the project rectangles in this container */
+#projects {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.project-title {
+
+}
+
+#tab-gallery {
+    background-color: lightgoldenrodyellow;
+}
+
+/* CSS grid to position columns for each preview image */
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(4, 50fr);
+    padding: 10px 0px 5px 0px;
+    margin: 0px;
+}
+
+.gallery-column {
+    padding: 10px 0px 10px 20px;
+}
+
+/* style the images in the grid */
+.gallery-column img {
+    opacity: 0.85;
+    cursor: pointer;
+    max-width: 90%;
+}
+
+.gallery-column img:hover {
+    opacity: 1;
+}
+
+/* position the container for the expanded image */
+#expanded-container {
+    position: relative;
+    display: none;
+}
+
+#expanded-image {
+    width: 100%;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
