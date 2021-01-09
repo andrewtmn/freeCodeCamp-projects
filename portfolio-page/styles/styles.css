@@ -31,6 +31,7 @@ body {
     text-decoration: none;
     color: white;
     padding: 5px;
+    margin: 0px 5px 0px 5px;
 }
 
 #navbar a:after {
@@ -56,6 +57,7 @@ body {
 #projects {
     background-color: lightblue;
     padding: 10px;
+    height: 100vh;
 }
 
 .project-title {
@@ -92,18 +94,10 @@ body {
 /* position the container for the expanded image */
 #expanded-container {
     position: relative;
-    display: none;
+    display: block;
 }
 
 #expanded-image {
     width: 100%;
 }
 
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 50px;
-    cursor: pointer;
-}
