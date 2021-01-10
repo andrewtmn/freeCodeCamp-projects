@@ -23,6 +23,7 @@ body {
 
 #navbar header {
     text-align: center;
+    font-family: Montserrat, sans-serif;
     float: left;
     padding: 20px 0px 10px 10px;
     margin: 0px 0px 0px 20px;
@@ -31,6 +32,7 @@ body {
     left: 5%;
 }
 
+/* remove bullet points for navbar list*/
 #navbar ul {
     list-style: none;
     padding: 0px 5px 0px 5px;
@@ -53,17 +55,15 @@ body {
 #home-photo {
     background-image: url(/images/mountain-shot.jpg);
     background-color: var(--main-bg, black);
-    margin: 60px 0px 0px 0px;
+    margin: 55px 0px 0px 0px;
     padding: 10px 0px 0px 0px;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
-    /* grid area to align main elements */
-    display: inline-block;
 }
 
 #home-photo img {
     width: 100vw;
-    height: 100%;
+    height: auto;
 }
 
 #home-photo h1,h2 {
@@ -117,3 +117,13 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-device-width: 480px) {
+    #home-photo {
+        width: 100vw;
+    }
+
+    #home-photo img {
+        width: 100vw;
+        height: auto;
+    }
+}
